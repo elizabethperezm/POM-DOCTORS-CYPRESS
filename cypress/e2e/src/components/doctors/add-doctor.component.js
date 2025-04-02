@@ -4,7 +4,7 @@ class AddDoctorComponent {
     emailInput = 'input[name="Email"]';
     educationInput = 'input[name="Education"]';
     designationInput = 'input[name="Designation"]';
-    submitButton = '.e-footer-content button.e-primary';
+    saveButton = '.e-footer-content button.e-primary';
 
 
     fillForm(name, phone, email, education, designation) {
@@ -16,7 +16,7 @@ class AddDoctorComponent {
     }
 
     submitForm() {
-        cy.get(this.submitButton).click();
+        cy.get(this.saveButton).click();
     }
 }
 export default AddDoctorComponent;
