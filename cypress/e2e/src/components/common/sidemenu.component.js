@@ -6,3 +6,5 @@ class SideMenuComponent {
         cy.get(this.doctorsMenuItem).click();
     }
 }
+
+export default SideMenuComponent;
