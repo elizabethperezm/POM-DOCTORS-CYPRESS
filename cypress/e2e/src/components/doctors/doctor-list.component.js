@@ -10,9 +10,5 @@ class DoctorListComponent {
     getDoctorName(name) {
         return cy.get(this.doctorList).contains(".name", name);
     }
-
-    verifyDoctorExists(name) {
-        this.getDoctorName(name).should("be.visible");
-    }
 }
 export default  DoctorListComponent;
