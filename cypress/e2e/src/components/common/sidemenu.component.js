@@ -3,7 +3,7 @@ class SideMenuComponent {
     patientsMenuItem = '[routerlink="/patients"]';
 
 
-    navigatetoDoctors() {
+    navigateToDoctors() {
         cy.get(this.doctorsMenuItem).click();
     }
 

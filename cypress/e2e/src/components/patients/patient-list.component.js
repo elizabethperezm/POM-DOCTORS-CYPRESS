@@ -6,7 +6,7 @@ class PatientListComponent {
         cy.get(this.addPatientButton).click();
     }
 
-    getpatientbyName(name) {
+    getpatientName(name) {
         return cy.get(this.patientList).contains(".patient-name", name);
     }
 
