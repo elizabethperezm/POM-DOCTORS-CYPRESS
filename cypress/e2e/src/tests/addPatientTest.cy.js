@@ -1,6 +1,7 @@
 import PatientPage from "../pages/patients.page";
 import data from "../../../fixtures/patientData.json";
 
+
 describe('Add Patient', () => {
     beforeEach(() => {
         PatientPage.open();
@@ -17,5 +18,7 @@ describe('Add Patient', () => {
             data.BloodGroup,
             data.symptoms
         )
+        patientsPage.addPatient.submitForm();
+        PatientPage.patientList.getpatientName(data.name).should('have.text', `${data.name}`);
     })
 })

@@ -1,9 +1,9 @@
 {
     "name" : "John Doe",
-    "dob" : "1990/01/01",
+    "dob" : "01/01/1990",
     "gender" : "Female",
     "mobile" : "99999999999999999",
     "email" : "john.doe@example.com",
-    "BloodGroup" : "O+",
+    "BloodGroup" : "A+",
     "symptoms" : "Fever"
 }
